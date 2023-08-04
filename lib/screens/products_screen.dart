@@ -47,8 +47,6 @@ class ProductsScreen extends StatelessWidget {
           final List products = (json.decode(snapshot.data!.body)
               as Map<String, dynamic>)['products'] as List;
 
-          debugPrint('products: ${products[0]}');
-
           return GridView.builder(
             padding: const EdgeInsets.all(16),
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
@@ -67,6 +65,7 @@ class ProductsScreen extends StatelessWidget {
                 );
               },
               child: Card(
+                key: Key('product_$index'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -76,7 +75,7 @@ class ProductsScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(12.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,                    
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Image.network(
                         products[index]['thumbnail'],

@@ -44,7 +44,6 @@ class ProfileScreen extends StatelessWidget {
             }
             final Map<String, dynamic> user =
                 (json.decode(snapshot.data!.body) as Map<String, dynamic>);
-            debugPrint('user: $user');
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

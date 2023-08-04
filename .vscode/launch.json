@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Integration Tests",
+      "request": "launch",
+      "type": "dart",
+      "program": "integration_test/app_test.dart",
+      "args": []
+    },
+    {
       "name": "Run Flutter",
       "request": "launch",
       "type": "dart",

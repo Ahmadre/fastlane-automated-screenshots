@@ -27,6 +27,7 @@ class WelcomeScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
+        key: const Key('go_to_products_screen'),
         onPressed: () {
           Navigator.of(context).push(
             MaterialPageRoute<void>(
