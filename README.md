@@ -1,16 +1,23 @@
-# screenshots
-
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Make sure you have flutter installed on your machine. If not, follow the instructions [here](https://flutter.dev/docs/get-started/install).
 
-A few resources to get you started if this is your first Flutter project:
+## Start the screenshot tests
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter drive \                      
+  --driver=test_driver/integration_test.dart \
+  --target=integration_test/app_test.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> If you are beeing asked to select a device please follow the instructions in the CLI.
+
+## Frame your screenshots
+
+To create final versions for the App Stores with frames, run the following command (in ios folder):
+
+```
+fastlane frame_screenshots
+```
+
+> Note: This is just a Prototype tested with IPhone 13 Pro Max and IPhone 14 Pro Max. Android is also working, but the fastlane lane is not yet configured!
