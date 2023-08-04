@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "dart.lineLength": 80,
+    "dart.flutterCreatePlatforms": [
+        "ios",
+        "android",
+    ],
+}
