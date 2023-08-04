@@ -1,0 +1,36 @@
+{
+    "device_frame_version": "latest",
+    "default": {
+      "title": {
+        "color": "#545454"
+      },
+      "background": "./background.jpg",
+      "padding": 50
+    },
+    "data": [
+      {
+        "filter": "welcome_screen",
+        "keyword": {
+          "color": "#d21559"
+        }
+      },
+      {
+        "filter": "products_screen",
+        "keyword": {
+          "color": "#feb909"
+        }
+      },
+      {
+        "filter": "product_detail",
+        "keyword": {
+          "color": "#aa4dbc"
+        }
+      },
+      {
+        "filter": "profile_screen",
+        "keyword": {
+          "color": "#31bb48"
+        }
+      }
+    ]
+  }

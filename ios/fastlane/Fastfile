@@ -17,7 +17,7 @@ default_platform(:ios)
 
 platform :ios do
   desc "Generate new localized screenshots"
-  lane :create_app_store_screenshots do
+  lane :frame_screenshots do
     frameit(
       path: "../integration_test/screenshots/ios/iPhone14ProMax",
       force_device_type: "iPhone 13 Pro Max",
